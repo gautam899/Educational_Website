@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- The first thing that we need to make here is the navigation bar. -->
+    <nav>
+      <img src="./images/SchoolLog.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- ***********Hero Section*************** -->
+    <section id="about-home">
+      <h2>Contact Us/</h2>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <!-- here we will have two parts -->
+      <div class="getin">
+        <h2>Get in touch</h2>
+        <p>
+          Looking for help? Fill in the form and we will get back to you as soon
+          as possible.
+        </p>
+        <div class="getin-details">
+          <h3>Headquaters</h3>
+          <div>
+            <i class="far fa-home get"></i>
+            <p>MBA Admissions Dillon House Soldiers Field Boston, MA 02163</p>
+          </div>
+          <h3>Phone</h3>
+          <div>
+            <i class="fas fa-phone-alt get"></i>
+            <p>
+              +1.617.495.6128 <br />
+              +1.617.495.6128
+            </p>
+          </div>
+          <h3>Support</h3>
+          <div>
+            <i class="fal fa-envelope-open-text get"></i>
+            <p>
+              admissions@hbs.edu
+              <br />
+              234@gmail.com
+            </p>
+          </div>
+
+          <h3>Follow Us</h3>
+          <div class="pro-links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-behance"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="form">
+        <h4>Let's connect</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, nisi!
+        </p>
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your Name" />
+          <input type="email" name="" id="email" placeholder="Email" />
+        </div>
+        <div class="form-col">
+          <input type="" name="" id="subject" placeholder="Subject" />
+        </div>
+        <div class="form-col">
+          <textarea
+            name=""
+            id="message"
+            col="30"
+            rows="8"
+            placeholder="How can we help you ?"
+          ></textarea>
+        </div>
+        <div class="form-col">
+          <button type="submit">Send Message</button>
+        </div>
+      </div> -->
+      <form
+        class="form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <h4>Let's connect</h4>
+        <p>Drop in your query and we will get back to you soon.</p>
+        <div class="form-row">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-col">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+            required
+          />
+        </div>
+        <div class="form-col">
+          <textarea
+            name="message"
+            id="message"
+            col="30"
+            rows="8"
+            placeholder="How can we help you ?"
+            required
+          ></textarea>
+        </div>
+        <div class="form-col">
+          <input
+            type="hidden"
+            name="apikey"
+            value="c6fac735-aca7-42a4-9272-6745100291e5"
+          />
+          <input type="hidden" name="botcheck" value="" />
+          <!-- This is to prevent spam submissions -->
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Here we need to create our map -->
+    <section id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.921384087589!2d-71.12471612389041!3d42.365514671192464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379d52f892431%3A0x8f11eee406b3f283!2sHarvard%20Business%20School!5e0!3m2!1sen!2sin!4v1716794663730!5m2!1sen!2sin"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>About Us</li>
+        <li>Certificate</li>
+        <li>Our Cources</li>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Our Alumini</li>
+        <li>Fee Structure</li>
+        <li>Pictures</li>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Events</li>
+        <li>Campus Tour</li>
+        <li>Academic Calander</li>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe For Latest Updates</p>
+        <div class="subscribe">
+          <input type="text" name="" id="" placeholder="Your Email Address" />
+          <a href="#" class="yellow">Subscribe</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Created with ❤ by Bhavya Gautam</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
